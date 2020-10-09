@@ -19,7 +19,7 @@
 DEVICE_PATH := device/samsung/gtexslteswa
 
 # For building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
+#ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH := arm
@@ -65,11 +65,14 @@ TARGET_BOARD_PLATFORM := sc8830
 # Hack: prevent anti rollback
 #PLATFORM_SECURITY_PATCH := 2099-12-31
 #PLATFORM_VERSION := 16.1.0
+PB_GO := true
+TARGET_SCREEN_WIDTH := 800
+TARGET_SCREEN_HEIGHT := 1280
+
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
